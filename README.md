@@ -7,12 +7,12 @@ Machine Learning
 
 Group Members
 =============
-Habib Unluoglu
-Sania Eskandari
-Brooke McWilliams
-James Birch
+Habib Unluoglu  
+Sania Eskandari  
+Brooke McWilliams  
+James Birch  
 
-Gneral Info
+General Info
 ===========
 We, as a group, have chosen to embark on our group project in the domain of “speech 
 emotion recognition” for specific reasons. One of the primary motivations behind our choice is 
