@@ -33,7 +33,9 @@ https://github.com/brmc230/CS460G-Project.git
 
 Datasets
 ========
-https://www.kaggle.com/datasets/dmitrybabko/speech-emotion-recognition-en
+https://www.kaggle.com/datasets/dmitrybabko/speech-emotion-recognition-en  
+Crema  
+Ravdess  
 
 Modeling Aspects
 ================
