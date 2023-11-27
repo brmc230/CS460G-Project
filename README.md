@@ -44,6 +44,7 @@ Required Libraries
 ==================
 Run the following to install the required libraries for this project if you do not already have them:  
 `pip3 install -r requirements.txt` 
+`git lfs install`
 
 Misc
 ====
