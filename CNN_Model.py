@@ -74,12 +74,20 @@ def eval_model(X_train, y_train, X_test, y_test, num_feat):
 #################################################################################################################################
 
 # read in data
-wave_df = pd.read_excel('Features.xlsx', header = 0, sheet_name='MFCC Features')
-#wave_df = pd.read_excel('Features.xlsx', header = 0, sheet_name='RMS')
-#wave_df = pd.read_excel('Features.xlsx', header = 0, sheet_name='Zero Crossing Rate')
+excel1 = 'Features.xlsx'
+excel2 = 'NewFeatures.xlsx'
+
+# wave_df = pd.read_excel(excel1, header = 0, sheet_name='MFCC Features')
+# wave_df = pd.read_excel(excel1, header = 0, sheet_name='RMS')
+# wave_df = pd.read_excel(excel1, header = 0, sheet_name='Zero Crossing Rate')
+
+wave_df = pd.read_excel(excel2, header = 0, sheet_name='MFCC Features')
+# wave_df = pd.read_excel(excel2, header = 0, sheet_name='RMS')
+# wave_df = pd.read_excel(excel2, header = 0, sheet_name='Zero Crossing Rate')
+
 print('Download Complete!')
 
-# converted wave data
+# Converted wave data
 X = wave_df.drop(['ID/File','Labels'], axis=1)
 y = wave_df['Labels']
 
