@@ -79,21 +79,18 @@ wav_data_zcr_norm = scale.fit_transform(wav_data_zcr)
 # Create dataframes to work with for each feature extraction method 
 # MFCC
 wave_mfcc_dataframe = pd.DataFrame(wav_data_mfcc_norm)
-wave_mfcc_dataframe.insert(0, "File", fileName)
+wave_mfcc_dataframe.insert(0, "ID/File", fileName)
 wave_mfcc_dataframe.insert(1, "Labels", labelList)
-wave_mfcc_dataframe.rename(columns={0: "ID/File"}, inplace=True)
 
 #RMS
 wave_rms_dataframe = pd.DataFrame(wav_data_rms_norm)
-wave_rms_dataframe.insert(0, "File", fileName)
+wave_rms_dataframe.insert(0, "ID/File", fileName)
 wave_rms_dataframe.insert(1, "Labels", labelList)
-wave_rms_dataframe.rename(columns={0: "ID/File"}, inplace=True)
 
 # Zero Crossing Rate
 wave_zcr_dataframe = pd.DataFrame(wav_data_zcr_norm)
-wave_zcr_dataframe.insert(0, "File", fileName)
+wave_zcr_dataframe.insert(0, "ID/File", fileName)
 wave_zcr_dataframe.insert(1, "Labels", labelList)
-wave_zcr_dataframe.rename(columns={0: "ID/File"}, inplace=True)
 
 
 # 3 Total sheets in the file for 3 different feature extraction methods
